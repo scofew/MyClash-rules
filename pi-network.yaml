@@ -1,6 +1,6 @@
 # pi-network.yaml
-# https://github.com/scofew/meta-rules-dat/blob/meta/my-yaml/pi-network.yaml
-# https://raw.githubusercontent.com/scofew/meta-rules-dat/refs/heads/meta/my-yaml/pi-network.yaml
+# https://github.com/scofew/MyClash-rules/blob/main/pi-network.yaml
+# https://github.com/scofew/MyClash-rules/raw/refs/heads/main/pi-network.yaml
 
 payload:
 # pi-network=31400-31409=目标端口=远程
