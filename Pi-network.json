@@ -1,19 +1,27 @@
 {
-  "route": 
-  {
+  "route": {
     "rule_set": [
       {
-        "type": "inline",
-        "tag": "pi-network",
-        "rules": [
-          { "process_name": ["Pi Network.exe","Pi Node Manager 1.2.3.5.exe","Docker Desktop.exe","com.docker.backend.exe","com.docker.extensions.exe","titan_network.exe","Discord.exe","Telegram.exe","Spotify.exe"] },
-          { "domain": ["jk.pi-node.cn","test1.titannet.io","cassini-us-locator.titannet.io","cassini-ger-locator.titannet.io","api-test1.container1.titannet.io","cassini-locator.titannet.io","test17-scheduler.titannet.io","test18-scheduler.titannet.io","test19-scheduler.titannet.io","test20-scheduler.titannet.io","test21-scheduler.titannet.io","test22-scheduler.titannet.io","test23-scheduler.titannet.io","test24-scheduler.titannet.io","test25-scheduler.titannet.io","test26-scheduler.titannet.io","test27-scheduler.titannet.io","test28-scheduler.titannet.io"] },
-          { "domain_suffix": [".pi-node.cn",".zhshsq.com",".minepi.com",".socialchain.app",".pi-mods.de",".pi-blockchain.net",".titannet.io"] },
-          { "Domain_Keyword": ["pi","pinetwork","titan","titannet"] },
-          { "dst-port": ["31400-31409","1234","2345","3456","5000"] },
-          { "src-port": ["31400-31409"] },
-          { "ip_cidr": ["203.0.113.0/24","8.208.0.0/12","8.208.0.0/12","14.128.0.0/12","34.160.0.0/12","47.64.0.0/12","47.224.0.0/12","47.240.0.0/12","130.158.0.0/12","154.38.0.0/12","173.208.0.0/12","216.144.0.0/12"] }
-        ]
+        "tag": "geosite-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+        "download_detour": "direct",
+        "update_interval": "24h"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "download_detour": "direct",
+        "update_interval": "24h"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": ["geosite-cn", "geoip-cn"],
+        "outbound": "direct"
       }
     ]
   }
