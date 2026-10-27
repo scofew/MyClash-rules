@@ -5,11 +5,16 @@
                 "5.62.60.105/32",
                 "5.62.60.106/31",
                 "2c0f:f4d0::/32",
-                "2c0f:f5d8::/32"
-            ],
+                "2c0f:f5d8::/32"]
+        },
+        
+        {
             "process_name": ["Pi Network.exe","Pi Node Manager 1.2.3.5.exe","Docker Desktop.exe","com.docker.backend.exe","com.docker.extensions.exe","titan_network.exe","Discord.exe","Telegram.exe","Spotify.exe"]
         }
+        
     ]
 }
+
+
 
 
