@@ -35,7 +35,7 @@
         "test28-scheduler.titannet.io"
       ],
 
-      "Domain_Suffix": [
+      "domain_suffix": [
         ".pi-node.cn",
         ".zhshsq.com",
         ".minepi.com",
