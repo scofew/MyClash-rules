@@ -1,37 +1,49 @@
-"DST-PORT,31400",
-"DST-PORT,31401",
-"DST-PORT,31402",
-"DST-PORT,31403",
-"DST-PORT,31404",
-"DST-PORT,31405",
-"DST-PORT,31406",
-"DST-PORT,31407",
-"DST-PORT,31408",
-"DST-PORT,31409",
-"SRC-PORT,31400",
-"SRC-PORT,31401",
-"SRC-PORT,31402",
-"SRC-PORT,31403",
-"SRC-PORT,31404",
-"SRC-PORT,31405",
-"SRC-PORT,31406",
-"SRC-PORT,31407",
-"SRC-PORT,31408",
-"SRC-PORT,31409",
-"DOMAIN-SUFFIX,pi-node.cn",
-"DOMAIN,jk.pi-node.cn",
-"DOMAIN-SUFFIX,zhshsq.com",
-"DOMAIN-SUFFIX,minepi.com",
-"DOMAIN-SUFFIX,socialchain.app",
-"DOMAIN-SUFFIX,docker.com",
-"DOMAIN-SUFFIX,docker.io",
-"DOMAIN-SUFFIX,dockerhub.com",
-"DOMAIN-SUFFIX,google.com",
-"DOMAIN-SUFFIX,github.com",
-"DOMAIN-SUFFIX,pi-mods.de",
-"DOMAIN-SUFFIX,pi-blockchain.net",
-"PROCESS-NAME,Pi Network.exe",
-"PROCESS-NAME,Pi Node Manager 1.2.3.5.exe",
-"PROCESS-NAME,Docker Desktop.exe",
-"PROCESS-NAME,com.docker.backend.exe",
-"PROCESS-NAME,com.docker.extensions.exe"
+{
+  "route": {
+    "rule_set": [
+      {
+        "type": "inline",         //十几条以内的自用列表（公司域名、家里 NAS 的 IP 段、要强制走代理的几个站点）
+        "tag": "pi-network",
+        "rules": [
+          { "domain": ["jk.pi-node.cn"] },
+          { "domain_suffix": [
+            ".pi-node.cn",
+            "zhshsq.com",
+            "minepi.com",
+            "socialchain.app",
+            "pi-mods.de",
+            "pi-blockchain.net"] },
+          { "process-name": [
+            "Pi Network.exe",
+            "Pi Node Manager 1.2.3.5.exe",
+            "Docker Desktop.exe",
+            "com.docker.backend.exe",
+            "com.docker.extensions.exe"] },
+          { "dst-port": [
+            "31400",
+            "31401",
+            "31402",
+            "31403",
+            "31404",
+            "31405",
+            "31406",
+            "31407",
+            "31408",
+            "31409"] },
+         { "src-port": [
+            "31400",
+            "31401",
+            "31402",
+            "31403",
+            "31404",
+            "31405",
+            "31406",
+            "31407",
+            "31408",
+            "31409"] },
+          { "ip_cidr": ["203.0.113.0/24"] }
+        ]
+      }
+    ]
+  }
+}
