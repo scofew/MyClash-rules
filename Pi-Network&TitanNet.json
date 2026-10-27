@@ -1,11 +1,82 @@
 {
-    "rules": [      
-        {"Process-name": ["Pi Network.exe","Pi Node Manager 1.2.3.5.exe","Docker Desktop.exe","com.docker.backend.exe","com.docker.extensions.exe","titan_network.exe","Discord.exe","Telegram.exe","Spotify.exe"]},
-        {"Domain": ["jk.pi-node.cn","test1.titannet.io","cassini-us-locator.titannet.io","cassini-ger-locator.titannet.io","api-test1.container1.titannet.io","cassini-locator.titannet.io","test17-scheduler.titannet.io","test18-scheduler.titannet.io","test19-scheduler.titannet.io","test20-scheduler.titannet.io","test21-scheduler.titannet.io","test22-scheduler.titannet.io","test23-scheduler.titannet.io","test24-scheduler.titannet.io","test25-scheduler.titannet.io","test26-scheduler.titannet.io","test27-scheduler.titannet.io","test28-scheduler.titannet.io"]},
-        {"Domain-Suffix": [".pi-node.cn",".zhshsq.com",".minepi.com",".socialchain.app",".pi-mods.de",".pi-blockchain.net",".titannet.io"]},
-        {"Domain-Keyword": ["pi","pinetwork","titan","titannet"]},
-        {"DST-PORT": ["31400-31409","1234","2345","3456","5000"]},
-        {"IP-CIDR": ["203.0.113.0/24","8.208.0.0/12","8.208.0.0/12","14.128.0.0/12","34.160.0.0/12","47.64.0.0/12","47.224.0.0/12","47.240.0.0/12","130.158.0.0/12","154.38.0.0/12","173.208.0.0/12","216.144.0.0/12"]}
-    ]
-}
+  "version": 3,
+  "rules": [
+    {
+      "process_name": [
+        "Pi Network.exe",
+        "Pi Node Manager 1.2.3.5.exe",
+        "Docker Desktop.exe",
+        "com.docker.backend.exe",
+        "com.docker.extensions.exe",
+        "titan_network.exe",
+        "Discord.exe",
+        "Telegram.exe",
+        "Spotify.exe"
+      ],
 
+      "Domain": [
+        "jk.pi-node.cn",
+        "test1.titannet.io",
+        "cassini-us-locator.titannet.io",
+        "cassini-ger-locator.titannet.io",
+        "api-test1.container1.titannet.io",
+        "cassini-locator.titannet.io",
+        "test17-scheduler.titannet.io",
+        "test18-scheduler.titannet.io",
+        "test19-scheduler.titannet.io",
+        "test20-scheduler.titannet.io",
+        "test21-scheduler.titannet.io",
+        "test22-scheduler.titannet.io",
+        "test23-scheduler.titannet.io",
+        "test24-scheduler.titannet.io",
+        "test25-scheduler.titannet.io",
+        "test26-scheduler.titannet.io",
+        "test27-scheduler.titannet.io",
+        "test28-scheduler.titannet.io"
+      ],
+
+      "Domain-Suffix": [
+        ".pi-node.cn",
+        ".zhshsq.com",
+        ".minepi.com",
+        ".socialchain.app",
+        ".pi-mods.de",
+        ".pi-blockchain.net",
+        ".titannet.io"
+      ],
+
+      "domain_keyword": [
+        "pi",
+        "pinetwork",
+        "titan",
+        "titannet"
+      ],
+
+      "DST-PORT": ["31400-31409","1234","2345","3456","5000"
+      ],
+
+      
+      "ip_cidr": [
+        "91.108.56.0/22",
+        "91.108.4.0/22",
+        "91.108.8.0/22",
+        "91.108.16.0/22",
+        "91.108.12.0/22",
+        "149.154.160.0/20",
+        "91.105.192.0/23",
+        "91.108.20.0/22",
+        "185.76.151.0/24",
+        "109.239.140.0/24",
+        "149.154.164.0/22",
+        "149.154.172.0/22",
+        "5.28.192.0/18",
+        "34.86.144.150/32",
+        "95.161.64.0/20",
+        "2001:67c:4e8::/48",
+        "2001:b28:f23c::/47",
+        "2001:b28:f23f::/48",
+        "2a0a:f280:203::/48"
+      ]
+    }
+  ]
+}
