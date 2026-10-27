@@ -7,7 +7,7 @@
 {"domain_suffix": [".pi-node.cn",".zhshsq.com",".minepi.com",".socialchain.app",".pi-mods.de",".pi-blockchain.net",".titannet.io"]},
 {"Domain_Keyword": ["pi","pinetwork","titan","titannet"]}，
 {"dst-port": ["31400-31409","1234","2345","3456","5000"]},
-{"src-port": ["31400-31409"]},
+{"src-port": ["31400-31409"]}
     ]
 }
 
