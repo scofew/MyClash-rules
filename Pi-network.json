@@ -1,48 +1,14 @@
 {
   "route": {
-    "rule_set": [
+    "rules": [
       {
-        "type": "inline",
-        "tag": "pi-network",
-        "rules": [
-          { "domain": ["jk.pi-node.cn"] },
-          { "domain_suffix": [
-            ".pi-node.cn",
-            "zhshsq.com",
-            "minepi.com",
-            "socialchain.app",
-            "pi-mods.de",
-            "pi-blockchain.net"] },
-          { "process-name": [
-            "Pi Network.exe",
-            "Pi Node Manager 1.2.3.5.exe",
-            "Docker Desktop.exe",
-            "com.docker.backend.exe",
-            "com.docker.extensions.exe"] },
-          { "dst-port": [
-            "31400",
-            "31401",
-            "31402",
-            "31403",
-            "31404",
-            "31405",
-            "31406",
-            "31407",
-            "31408",
-            "31409"] },
-         { "src-port": [
-            "31400",
-            "31401",
-            "31402",
-            "31403",
-            "31404",
-            "31405",
-            "31406",
-            "31407",
-            "31408",
-            "31409"] },
-          { "ip_cidr": ["203.0.113.0/24"] }
-        ]
+        "process_name": ["Pi Network.exe","Pi Node Manager 1.2.3.5.exe","Docker Desktop.exe","com.docker.backend.exe", "com.docker.extensions.exe","Discord.exe","Telegram.exe", "Spotify.exe"],
+        "domain": ["jk.pi-node.cn"],
+        "domain_suffix": [".pi-node.cn","zhshsq.com","minepi.com","socialchain.app","pi-mods.de","pi-blockchain.net"],
+        "dst-port": ["31400-31409"],
+        "src-port": ["31400-31409"],
+        "ip_cidr": ["203.0.113.0/24"],
+        "outbound": "proxy"
       }
     ]
   }
