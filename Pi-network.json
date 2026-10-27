@@ -2,7 +2,7 @@
   "route": {
     "rule_set": [
       {
-        "type": "inline",         //十几条以内的自用列表（公司域名、家里 NAS 的 IP 段、要强制走代理的几个站点）
+        "type": "inline",
         "tag": "pi-network",
         "rules": [
           { "domain": ["jk.pi-node.cn"] },
