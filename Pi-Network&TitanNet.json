@@ -35,7 +35,7 @@
         "test28-scheduler.titannet.io"
       ],
 
-      "Domain-Suffix": [
+      "Domain_Suffix": [
         ".pi-node.cn",
         ".zhshsq.com",
         ".minepi.com",
@@ -52,7 +52,7 @@
         "titannet"
       ],
 
-      "DST-PORT": ["31400-31409","1234","2345","3456","5000"
+      "DST_PORT": ["31400-31409","1234","2345","3456","5000"
       ],
 
       
