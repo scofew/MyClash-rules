@@ -1,0 +1,248 @@
+[
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "ip": [
+      "192.168.10.19",
+      "192.168.10.29",
+      "192.168.10.30",
+      "192.168.10.39",
+      "192.168.10.99"
+    ],
+    "enabled": true,
+    "remarks": "\u81EA\u5B9A\u4E49\u4EE3\u7406IP"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "10.99.99.0/16",
+      "192.168.2.0/24",
+      "192.168.3.0/24",
+      "192.168.5.0/24",
+      "192.168.6.0/24",
+      "192.168.31.0/24",
+      "192.168.10.0/24"
+    ],
+    "domain": [
+      "cfnatyxip.gecvip.com",
+      "gecvip.com",
+      "*.gecvip.com",
+      "gecvip.cn",
+      "*.gecvip.cn",
+      "zengzhixin.com",
+      "*.zengzhixin.com",
+      "zengzhixin.cn",
+      "*.zengzhixin.cn",
+      "account.microsoft.com",
+      "microsoft.com",
+      "*.microsoft.com",
+      "account.live.com",
+      "*.live.com",
+      "geavip.dpdns.org",
+      "*.geavip.dpdns.org",
+      "gea.green-entrepreneurship.co",
+      "gea.green-entrepreneurship.cc",
+      "green-chain.cc",
+      "*.green-entrepreneurship.co",
+      "*.green-entrepreneurship.cc",
+      "*.green-chain.cc",
+      "lastpass.com",
+      "getgrass.io",
+      "app.getgrass.io",
+      "*.getgrass.io",
+      "grass.io",
+      "app.grass.io",
+      "*.grass.io",
+      "grassfoundation.io",
+      "*.grassfoundation.io",
+      "traefik.aws-grass.com",
+      "aliyun.com",
+      "*.aliyun.com",
+      "deepl.com",
+      "oracle.com",
+      "cybersource.com",
+      "mail.qq.com",
+      "wx.mail.qq.com",
+      "linkstweb.xyz"
+    ],
+    "process": [
+      "Djbox.exe",
+      "QQ.exe",
+      "QQPCTray.exe",
+      "QMUI.exe",
+      "ksolaunch.exe",
+      "grass.exe",
+      "BaiduNetdisk.exe",
+      "CloudFlareScan_3.0.exe"
+    ],
+    "enabled": true,
+    "remarks": "My\u76F4\u8FDE\u89C4\u5219\u96C6"
+  },
+  {
+    "port": "",
+    "outboundTag": "proxy",
+    "domain": [
+      "pi-node.cn",
+      "*.pi-node.cn",
+      "minepi.com",
+      "*.minepi.com",
+      "socialchain.app",
+      "*.socialchain.app",
+      "docker.com",
+      "*.docker.com",
+      "pi-mods.de",
+      "*.pi-mods.de",
+      "pi-blockchain.net",
+      "*.pi-blockchain.net",
+      "^pi-node\\..\u002B\u003CCOMMA\u003E"
+    ],
+    "process": [
+      "Pi Network.exe",
+      "Docker Desktop.exe",
+      "Pi Node Manager 1.2.3.5.exe",
+      "Telegram.exe"
+    ],
+    "enabled": true,
+    "remarks": "PiNet\u89C4\u5219\u96C6"
+  },
+  {
+    "port": "",
+    "network": "tcp,udp",
+    "outboundTag": "proxy",
+    "ip": [
+      "8.208.0.0/12",
+      "14.128.0.0/12",
+      "34.160.0.0/12",
+      "47.64.0.0/12",
+      "47.224.0.0/12",
+      "47.240.0.0/12",
+      "130.158.0.0/12",
+      "154.38.0.0/12",
+      "173.208.0.0/12",
+      "183.224.0.0/12",
+      "216.144.0.0/12"
+    ],
+    "domain": [
+      "titannet.io",
+      "*.titannet.io",
+      "test1.titannet.io",
+      "cassini-locator.titannet.io",
+      "cassini-us-locator.titannet.io",
+      "cassini-ger-locator.titannet.io",
+      "api-test1.container1.titannet.io",
+      "test17-scheduler.titannet.io",
+      "test18-scheduler.titannet.io",
+      "test19-scheduler.titannet.io",
+      "test20-scheduler.titannet.io",
+      "test21-scheduler.titannet.io",
+      "test22-scheduler.titannet.io",
+      "test23-scheduler.titannet.io",
+      "test24-scheduler.titannet.io",
+      "test25-scheduler.titannet.io",
+      "test26-scheduler.titannet.io",
+      "test27-scheduler.titannet.io",
+      "test28-scheduler.titannet.io",
+      "^titannet\\..\u002B\u003CCOMMA\u003E"
+    ],
+    "process": [
+      "titan_network.exe"
+    ],
+    "enabled": true,
+    "remarks": "TITAN\u89C4\u5219\u96C6"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private",
+      "224.0.0.0/4",
+      "255.255.255.255/32",
+      "ff00::/8"
+    ],
+    "domain": [
+      "geosite:private",
+      "domain:local",
+      "domain:lan"
+    ],
+    "enabled": true,
+    "remarks": "\u5C40\u57DF\u7F51\u76F4\u8FDE"
+  },
+  {
+    "port": "443",
+    "network": "udp",
+    "outboundTag": "block",
+    "enabled": true,
+    "remarks": "UDP 443\u963B\u65AD"
+  },
+  {
+    "port": "",
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
+    ],
+    "enabled": true,
+    "remarks": "\u5E7F\u544A\u8FC7\u6EE4"
+  },
+  {
+    "port": "",
+    "outboundTag": "\u7F8E\u56FD\u4F4F\u5B85\u7B56\u7565\u96C6",
+    "domain": [
+      "geosite:openai"
+    ],
+    "enabled": true,
+    "remarks": "GPT"
+  },
+  {
+    "port": "",
+    "outboundTag": "\u7F8E\u56FD\u4F4F\u5B85\u7B56\u7565\u96C6",
+    "domain": [
+      "geosite:google-gemini"
+    ],
+    "enabled": true,
+    "remarks": "Gemini"
+  },
+  {
+    "port": "",
+    "outboundTag": "\u7F8E\u56FD\u4F4F\u5B85\u7B56\u7565\u96C6",
+    "domain": [
+      "geosite:youtube",
+      "geosite:netflix",
+      "geosite:disney",
+      "geosite:hbo",
+      "geosite:primevideo",
+      "geosite:spotify",
+      "geosite:twitch"
+    ],
+    "enabled": true,
+    "remarks": "\u6D41\u5A92\u4F53"
+  },
+  {
+    "port": "",
+    "outboundTag": "\u9999\u6E2F\u56FA\u5B9A\u8282\u70B9",
+    "domain": [
+      "geosite:category-cryptocurrency"
+    ],
+    "enabled": true,
+    "remarks": "\u4EA4\u6613\u6240"
+  },
+  {
+    "port": "",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:cn"
+    ],
+    "domain": [
+      "geosite:cn"
+    ],
+    "enabled": true,
+    "remarks": "\u56FD\u5185\u76F4\u8FDE"
+  },
+  {
+    "port": "",
+    "network": "tcp,udp",
+    "outboundTag": "proxy",
+    "enabled": true,
+    "remarks": "\u6700\u7EC8\u4EE3\u7406"
+  }
+]
